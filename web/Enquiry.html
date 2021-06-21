@@ -1,0 +1,174 @@
+<html>
+<head>
+<title>Enquiry</title>
+</head>
+<body text="blue" vlink="blue" background="Img1.GIF">
+<table width="760" align="center" height="100" border="4" bordercolor="teal">
+<tr><td align="center" background="Img15.GIF">
+<img src="Img6.GIF"width="50" height="55" align="left">
+<p align="center"><font size="7" face="Lucida Calligraphy" color="brown"><b><u><i>Enquiry</i></u></b></font></p>
+</td></tr>
+</table>
+
+<Form name="form1" method="Post" Action="Search.jsp" onSubmit="return check()">
+<table width="760" height="20" align="center" height="100">
+<tr><td align="right">
+<img align="center" src="Search.jpg" align="left" height="19" width="23">&nbsp;&nbsp;&nbsp;<Font size="4" face="cambria">Search</Font>&nbsp;<Input type="text" size="30" name="matter">&nbsp;&nbsp;&nbsp;<Input type="Submit"  value="SEARCH">&nbsp;
+</td></tr>
+</table>
+<script language="JavaScript">
+function check()
+{
+ Matter=document.form1.matter.value;
+ if(Matter.length==0)
+ return false;
+ return true; 
+}
+</script> 
+</Form>
+
+<table width="750" align="center">
+<tr><td align="center" bgcolor="orange">
+<font size="3">
+<a href="Home.html">Home</a>
+<span>|</span>
+<a href="Hospital.html">About Hospital</a>
+<span>|</span>
+<a href="Diagnostic.html">Diagnostic Services</a>
+<span>|</span>
+<a href="Departments.html">Departments</a>
+<span>|</span>
+<a href="Facilities.html">Facilities</a>
+<span>|</span>
+<a href="Doctors.html">Doctors</a>
+<span>|</span>
+<a href="Icu.html">ICU</a>
+<span>|</span>
+<a href="Iccu.html">ICCU</a>
+<span>|</span>
+<a href="Contact.html">Contact Us</a>
+<span>|</span>
+<a href="Employment.html">Employment</a>
+</font>
+</td></tr>
+</table>
+<br>
+
+<table align="left" border="1" bordercolor="red" width="135" background="Img12.GIF">
+<tr><td>
+<img src="Img4.GIF" align="left" height="18" width="25"><a href="Bank.html" title="Details about Hospital's Blood Bank"><font face="cambria">Blood Bank</font></a><br><br>
+<img src="Img4.GIF" align="left" height="18" width="25"><a href="Wards.html" title="Different Information about Wards"><font face="cambria">Wards</font></a><br><br> 
+<img src="Img4.GIF" align="left" height="18" width="25"><a href="Cabins.html" title="Different Information about Cabins"><font face="cambria">Cabins</font></a><br><br>
+<img src="Img4.GIF" align="left" height="18" width="25"><a href="Enquiry.html" title="Different Enquries"><font face="cambria">Enquiry</font></a><br><br> 
+<img src="Img4.GIF" align="left" height="18" width="25"><a href="Feedback.html" title="Send Your Feedback"><font face="cambria">Feedback</font></a><br> 
+</td></tr>
+</table>
+
+<form name="form2" method="post" action="Enquiry.jsp" onSubmit="return validate()">
+<table align="center" border="2" bordercolor="brown" width="445" background="Img9.GIF">
+<tr align="center"><td align="center">
+<br><b>Name&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; :</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="name" size="35"><br><br>
+<b>Address&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; :</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<textarea name="address" rows="3" cols="27"></textarea><br><br>
+<b>Phone No.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; :</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="phone" size="35"><br><br>
+<b>Fax No.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; :</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="fax" size="35"><br><br>
+<b>E-mail&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; :</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="mail" size="35"><br><br>
+<b>Problem&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; :</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<textarea name="problem" rows="2" cols="27"></textarea><br><br>
+<b>Investigation&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; :</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<textarea name="investigation" rows="3" cols="27"></textarea><br>
+<p align="left"><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Category &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<select name="category">
+                                            <option value="Nil">&nbsp;&nbsp;&nbsp;&nbsp;---Select---</option>
+                                            <option value="Non AC Male Ward">Non AC Male Ward</option>
+                                            <option value="AC Male Ward">AC Male Ward</option>
+                                            <option value="Non AC Female Ward">Non AC Female Ward</option>
+                                            <option value="AC Female Ward">AC Female Ward</option>
+                                            <option value="Non AC Cabin">Non AC Cabin</option>
+                                            <option value="AC Cabin">AC Cabin</option>
+                                            </select></p>
+<b>Expected Arrival &nbsp;&nbsp;:</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="date1" size="1"><input type="text" name="month1" size="1"><input type="text" name="year1" size="2"><b> and </b><input type="text" name="date2" size="1"><input type="text" name="month2" size="1"><input type="text" name="year2" size="2"><br><br>
+<b>Specific Enquiry &nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b><textarea name="specific" rows="3" cols="27"></textarea><br><br><br>
+&nbsp;&nbsp;<input type="submit" value="SUBMIT">&nbsp;&nbsp;&nbsp;<input type="reset" value="RESET"><br><br>
+</td>
+</tr>
+</table>
+<script language="JavaScript">
+function validate()
+{
+ a=0;
+ b=1;
+ 
+ Name=document.form2.name.value;
+ 
+ if(Name.length==0 || Name.length < 6)
+ {
+  alert("Please Enter Your Full Name!");
+  return false;
+ }
+ 
+ for(i=0;i<Name.length;i++)
+ {
+  
+  no=Name.substring(a,b);
+   
+   if(no>='a' && no<='z' || no>='A' && no<='Z' || no==' ') 
+   {}
+   else
+   {
+     alert("Please Enter Your Name Carefully!");
+     return false;
+   } 
+   
+  a++;
+  b++;
+ } 
+ 
+ Address=document.form2.address.value;
+ if(Address.length==0) 
+ {
+   alert("Please Enter Your Address!");
+   return false; 
+ }
+ if(Address.length<10) 
+ {
+   alert("Please Enter Your Full Address!");
+   return false; 
+ }
+ 
+ Phone=document.form2.phone.value;
+ if(Phone.length==0) 
+ {
+   alert("Please Enter Your Phone No.!");
+   return false; 
+ }
+ if(Phone.length<6) 
+ {
+   alert("Please Enter Your Phone No. Carefully!");
+   return false; 
+ }       
+ 
+ Problem=document.form2.problem.value;
+ Investigation=document.form2.investigation.value;
+ Category=document.form2.category.value;
+ Date1=document.form2.date1.value;
+ Month1=document.form2.month1.value;
+ Year1=document.form2.year1.value;
+ Date2=document.form2.date2.value;
+ Month2=document.form2.month2.value;
+ Year2=document.form2.year2.value;
+ Specific=document.form2.specific.value;
+        
+ if(Problem.length==0 && Investigation.length==0 && Category.length==3 && Specific.length==0)
+ {
+   alert("Please Fill Your Form Carefully!");
+   return false; 
+ }
+ 
+ if(Date1.length!=0 && Month1.length==0 && Year1.length==0 || Date1.length==0 && Month1.length!=0 && Year1.length==0 || Date1.length==0 && Month1.length==0 && Year1.length!=0 || Date1.length==0 && Month1.length!=0 && Year1.length!=0 || Date1.length!=0 && Month1.length==0 && Year1.length!=0 || Date1.length!=0 && Month1.length!=0 && Year1.length==0 &&   Date2.length!=0 && Month2.length==0 && Year2.length==0 || Date2.length==0 && Month2.length!=0 && Year2.length==0 || Date2.length==0 && Month2.length==0 && Year2.length!=0 || Date2.length==0 && Month2.length!=0 && Year2.length!=0 || Date2.length!=0 && Month2.length==0 && Year2!=0 || Date2.length!=0 && Month2.length!=0 && Year2.length==0)               
+ {
+    alert("Please Enter Arrival Dates Carefully"); 
+    return false;    
+ } 
+ return true;
+}
+</script>
+</form>
+</body>
+</html>

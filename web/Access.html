@@ -1,0 +1,38 @@
+<html>
+<head>
+<title>ACCESS</title>
+</head>
+<body text="blue" background="Img1.GIF">
+
+<table width="760" align="center" height="100" border="4" bordercolor="brown">
+<tr><td align="center" background="Img3.gif">
+        <p align="center"><img src="Img2.GIF" align="left" height="55" width="80"><font face="Algerian" size="7" color="blue">&nbsp;&nbsp;<b><u>GREENFIELD HOSPITAL</u></b></font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="Img7.GIF" align="center" height="50" width="60"></p>
+</td></tr>
+</table>
+   <p align="Center"><font size="6" color="red"><b><u>ACCESS</u></b></font></p>
+   <form name="form1" method="post" action="Access.jsp" onSubmit="return validate()"> 
+   <table align="center" border="2" width="400" bordercolor="magenta" background="Img17.GIF">
+        <tr align="center">
+            <td><b><br><font size="4">Enter Password: </font><br><br></b></td>
+            <td><br><input type="password" size="17" name="pass"><br><br></td>
+        </tr>
+         
+        <tr align="center" >
+             <td colspan="2"><br><input type="submit" value="SUBMIT"><br><br></td>
+        </tr>      
+    </table>
+    <script language="JavaScript">
+        function validate()
+        {
+            Pass=document.form1.pass.value;
+            if(Pass.length==0)
+            {
+                alert("Please Enter The Password!");
+                return false;
+            }    
+            return true;
+        }
+    </script>   
+</form>
+</body>
+</html>

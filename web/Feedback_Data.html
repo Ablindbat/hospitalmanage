@@ -1,0 +1,24 @@
+<html>
+<head>
+<title>Users Feedback</title>
+</head>
+<body text="blue" vlink="blue" background="Img1.GIF">
+<table width="760" align="center" height="100" border="4" bordercolor="teal">
+<tr>
+<td align="center" background="Img15.GIF">
+<img src="Img6.GIF"width="50" height="55" align="left">
+<p align="center"><font size="7" face="Lucida Calligraphy" color="brown"><b><u><i>Users Feedback</i></u></b></font></p>
+</td></tr>
+</table>
+<br><br><br>
+<FORM METHOD="POST" Action="Feedback_Data.jsp">
+    <img border="2" src="Building.jpg" width="320" height="210" align="right" >
+    <input type="radio" name="info" value="display" onClick="submit()"><font size="4"><i><b> Display All Feedbacks</b></i></font><br><br>
+    <input type="radio" name="info" value="today" onClick="submit()"><font size="4"><i><b> Display Today's Feedbacks</b></i></font><br><br>
+    <input type="radio" name="info" value="particular" onClick="submit()"><font size="4"><i><b> Display Feedbacks on a Particular Date</b></i></font><br><br>    
+    <input type="radio" name="info" value="user" onClick="submit()"><font size="4"><i><b> Display Feedback of a Particular User</b></i></font><br><br>    
+    <input type="radio" name="info" value="delete" onClick="submit()"><font size="4"><i><b> Delete User Feedback</b></i></font><br><br>    
+    <input type="radio" name="info" onClick="window.close()"><font size="4"><i><b> Exit</b></i></font>
+</FORM>
+</body>
+</html>

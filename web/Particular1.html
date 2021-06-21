@@ -1,0 +1,45 @@
+<html>
+<head>
+<title>Particular Date</title>
+</head>
+<body text="blue" vlink="blue" background="Img1.GIF">
+
+<table width="760" align="center" height="100" border="4" bordercolor="teal">
+<tr><td align="center" background="Img15.GIF">
+<img src="Img6.GIF"width="50" height="55" align="left">
+<p align="center"><font size="7" face="Lucida Calligraphy" color="brown"><b><u><i>Particular Date</i></u></b></font></p>
+</td></tr>
+</table>
+<br><a href="Request.html"><font size="2"><b><i>Home</i></b></font></a>
+<form name="form1" method="post" action="Particular1.jsp" onSubmit="return check()">
+<table align="center" border="2" width="500" bordercolor="magenta" background="Img17.GIF">
+      <tr align="center">
+          <td colspan="2"><br><b>Enter Date (DD/MM/YYYY): </b><br><br></td>
+          <td colspan="2"><br><input type="text" size="26" name="dt"><br><br></td>
+      </tr>
+      <tr align="center">
+      <td colspan="4">
+          <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="submit" value="SEARCH"><br><br></td>
+      </tr>
+</table>
+<script language="JavaScript">
+function check()
+{
+    DT=document.form1.dt.value;
+    if(DT.length==0)
+    {
+        alert("Please Enter the Date!");
+        return false;
+    }    
+    if(DT.length!=10)
+    {
+        alert("Please Enter the Date in DD/MM/YYYY Format like 18/11/2010");
+        return false;
+    }    
+    return true;
+}
+</script>
+</form>
+</body>
+</html>
+        
